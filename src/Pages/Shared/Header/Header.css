@@ -1,0 +1,112 @@
+.top-bar {
+    background-color: #162F62;
+}
+
+ul.social-icon{
+    margin: 0;
+    padding: 0;
+}
+ul.social-icon li {
+    list-style: none;
+    margin: 10px;
+    padding: 0px 3px;
+}
+
+ul.social-icon li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: .5s;
+    
+}
+
+ul.social-icon li a:hover{
+    color: #7DD6F6;
+}
+
+.login-signup a {
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+    padding-bottom: 5px;
+}
+
+.login-signup a:hover{
+    border-bottom: 1px solid #7DD6F6;
+}
+
+.login-signup a.after-effect{
+    position: relative;
+}
+
+.login-signup a.after-effect::after{
+    position: absolute;
+    content: "";
+    width: 5%;
+    height: 21px;
+    background-color: #7DD6F6;
+    top: 3px;
+    right: -9px;
+}
+
+header.head {
+    background-color: #FFFFFF;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #162F62;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    margin-right: 5px;
+    transition: .5s;
+}
+
+.nav-menu a:hover{
+    color: #7DD6F6;
+}
+
+.justify-content-end.nav-menu.navbar-collapse {
+    text-align: right;
+    padding: 10px 0px;
+    width: 200px;
+    box-shadow: none;
+}
+
+.justify-content-end.nav-menu.navbar-collapse.collapse.show .nav-link {
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    background-color: #d9d9d957;
+}
+
+button.navbar-toggler{
+    border: 1px solid #7DD6F6 !important;
+    padding: 3px 6px;
+    box-shadow: none !important;
+    color: #162F62 !important;
+}
+
+
+
+/************ HEADER RESPONSIVE ***************/
+@media screen and (max-width:575px){
+    ul.social-icon {
+        justify-content: center;
+    }
+    .login-signup {
+        justify-content: center;
+        display: flex;
+    }
+}
