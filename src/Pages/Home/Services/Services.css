@@ -1,0 +1,19 @@
+.service-title h2 {
+    color: #162F62;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.service-title h2::after {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: #7DD6F6;
+    bottom: 0;
+    top: 58px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

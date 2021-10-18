@@ -16,7 +16,7 @@ const Services = () => {
         <>
             <Container className='my-5 py-5'>
                 <Row>
-                    <div className="service-title">
+                    <div className="service-title mb-5">
                         <h2>Our Services</h2>
                     </div>
                 </Row>

@@ -1,0 +1,57 @@
+.service-card {
+    padding: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top left, #f6f6f6, #bfe9ff);
+    transition: .5s;
+}
+
+.service-card:hover{
+    box-shadow: 2px 11px 13px -7px #7dd6f6;
+}
+
+.service-img img {
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.service-title-details {
+    padding: 10px 0px;
+}
+
+.service-title-details h3 {
+    color: #162F62;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-title-details p {
+    color: #162F62;
+    font-size: 16px;
+    font-weight: 600;
+    word-spacing: 1px;
+}
+
+.service-title-details span {
+    font-weight: 700;
+}
+
+.service-title-details a {
+    text-decoration: none;
+    background-color: #162F62;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 7px 25px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: .3s;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.service-title-details a:hover{
+    border: 1px solid #162F62;
+    background-color: transparent;
+    color: #162F62;
+}
