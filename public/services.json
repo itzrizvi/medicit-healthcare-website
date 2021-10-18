@@ -1,0 +1,74 @@
+[
+    {
+        "id": 2,
+        "name": "CT Scan Test",
+        "price": 150,
+        "report": "Instant Report Delivery",
+        "img": "https://i.ibb.co/W3JHdtT/ctscantest.png",
+        "desc": "CT (Computed Tomography) Scan. Computed tomography (CT) scan is a useful diagnostic tool for detecting diseases and injuries."
+    },
+    {
+        "id": 3,
+        "name": "Dental Care",
+        "price": 100,
+        "report": "Instant/Two weeks/Three weeks",
+        "img": "https://i.ibb.co/yX2tx6y/dentalcare.png",
+        "desc": "Expert surgical care from the team you know and trust. Implants, root canals, extractions and more in our dental unit."
+    },
+    {
+        "id": 1,
+        "name": "Full Body Diagnostic",
+        "price": 999,
+        "report": "After Two Weeks",
+        "img": "https://i.ibb.co/D8dxCPy/diagnostics.png",
+        "desc": "Full Body diagnostics helps you to see what's to your body and if you have any body complexity or not and figure it out."
+    },
+    {
+        "id": 4,
+        "name": "DNA Test",
+        "price": 250,
+        "report": "After Three Days",
+        "img": "https://i.ibb.co/D5NpMVt/dnatest.png",
+        "desc": "DNA test is one of the most costly test in the world and we are giving that at a lowest cost because it has became a necessary to all sectors."
+    },
+    {
+        "id": 5,
+        "name": "Pregnancy Care",
+        "price": 230,
+        "report": "Within 24 Hours",
+        "img": "https://i.ibb.co/J5vpwyc/pregnancycare.png",
+        "desc": "We have a huge unit of pregnancy care, we have high tech technologies for testing pregnant womens and detect baby's conditions.."
+    },
+    {
+        "id": 6,
+        "name": "Skin Care",
+        "price": 199,
+        "report": "Within 5 Hours",
+        "img": "https://i.ibb.co/6BTX23y/skincare.png",
+        "desc": "Skin care unit has a lot of specilists and all the necessary machinaries with a spa room where you can relax and have a great spa."
+    },
+    {
+        "id": 7,
+        "name": "X-ray Test",
+        "price": 80,
+        "report": "Instant Report Delivery",
+        "img": "https://i.ibb.co/zRmGb29/xraytest.png",
+        "desc": "For bones injuries or accidental patient we have hi tech x-ray machines and specialist where you can easily get to know bones condition."
+    },
+    {
+        "id": 8,
+        "name": "Blood Test",
+        "price": 50,
+        "report": "Within 24 Hours",
+        "img": "https://i.ibb.co/hWjbcjm/bloodtest.png",
+        "desc": "We do CBC, ESR and many more blood tests for different deases with a lowest cost and much more experienced paramedics those who are alwasy clean."
+    },
+    {
+        "id": 9,
+        "name": "Covid Test",
+        "price": 49,
+        "report": "Instant/Within 24 Hours",
+        "img": "https://i.ibb.co/8NYW8S4/covidtest.png",
+        "desc": "In this pendamic situation we are giving the best service regarding the Covid-19 and we are maintaining all the safety reasons we have."
+    }
+]
