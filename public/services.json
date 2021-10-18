@@ -1,5 +1,13 @@
 [
     {
+        "id": 1,
+        "name": "Full Body Diagnostic",
+        "price": 999,
+        "report": "After Two Weeks",
+        "img": "https://i.ibb.co/D8dxCPy/diagnostics.png",
+        "desc": "Full Body diagnostics helps you to see what's to your body and if you have any body complexity or not and figure it out."
+    },
+    {
         "id": 2,
         "name": "CT Scan Test",
         "price": 150,
@@ -14,14 +22,6 @@
         "report": "Instant/Two weeks/Three weeks",
         "img": "https://i.ibb.co/yX2tx6y/dentalcare.png",
         "desc": "Expert surgical care from the team you know and trust. Implants, root canals, extractions and more in our dental unit."
-    },
-    {
-        "id": 1,
-        "name": "Full Body Diagnostic",
-        "price": 999,
-        "report": "After Two Weeks",
-        "img": "https://i.ibb.co/D8dxCPy/diagnostics.png",
-        "desc": "Full Body diagnostics helps you to see what's to your body and if you have any body complexity or not and figure it out."
     },
     {
         "id": 4,

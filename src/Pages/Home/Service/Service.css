@@ -36,7 +36,7 @@
     font-weight: 700;
 }
 
-.service-title-details a {
+.service-title-details button {
     text-decoration: none;
     background-color: #162F62;
     color: #FFFFFF;
@@ -50,7 +50,7 @@
     margin-top: 8px;
 }
 
-.service-title-details a:hover{
+.service-title-details button:hover{
     border: 1px solid #162F62;
     background-color: transparent;
     color: #162F62;

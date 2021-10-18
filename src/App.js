@@ -9,6 +9,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import About from './Pages/About/About';
 import Specialist from './Pages/Specialist/Specialist';
 import Contact from './Pages/Contact/Contact';
+import ServiceDetail from './Pages/Home/ServiceDetail/ServiceDetail';
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
 
           <Route exact path="/">
             <Home></Home>
+          </Route>
+
+          <Route path="/servicedetail/:serviceID">
+            <ServiceDetail></ServiceDetail>
           </Route>
 
           <Route path="/about">
