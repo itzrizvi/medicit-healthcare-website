@@ -25,7 +25,7 @@ ul.social-icon li a:hover{
     color: #7DD6F6;
 }
 
-.login-signup a {
+.login-signup a, button.logout-btn {
     display: inline-block;
     color: #FFFFFF;
     text-decoration: none;
@@ -36,7 +36,13 @@ ul.social-icon li a:hover{
     padding-bottom: 5px;
 }
 
-.login-signup a:hover{
+button.logout-btn{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.login-signup a:hover, button.logout-btn:hover{
     border-bottom: 1px solid #7DD6F6;
 }
 
@@ -98,6 +104,27 @@ button.navbar-toggler{
     color: #162F62 !important;
 }
 
+img.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid transparent;
+    transition:.5s;
+}
+
+img.user-img:hover {
+    border: 1px solid #7DD6F6; 
+}
+
+a.user-img-link:hover {
+    border-bottom: none;
+}
+
+a.user-img-link {
+    transition: none;
+    border: none;
+    border-bottom: none;
+}
 
 
 /************ HEADER RESPONSIVE ***************/

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import logo from '../../../Images/Logo.png';
 import './Header.css';
+import useAuth from '../../../hooks/useAuth';
 
 
 const Header = () => {
@@ -12,6 +13,8 @@ const Header = () => {
     const twitIcon = <FontAwesomeIcon icon={faTwitter} />
     const pintrstIcon = <FontAwesomeIcon icon={faPinterest} />
     const instaIcon = <FontAwesomeIcon icon={faInstagram} />
+
+    const { user, logOut } = useAuth();
 
     const activeLink = {
         borderBottom: '1px solid #162F62',
@@ -32,8 +35,14 @@ const Header = () => {
                             </ul>
                         </Col>
                         <Col md={6} sm={6} xs={12} className='login-signup text-end'>
-                            <Link to="/login" className='after-effect'>Login</Link>
-                            <Link to="/signup">Sign up</Link>
+                            <Link to="/signup" className='after-effect'>Sign up</Link>
+                            {user?.email ?
+                                <button onClick={logOut} className="logout-btn">Logout</button> :
+                                <Link to="/login">Login</Link>}
+                            <Link to="/home">{user?.displayName}</Link>
+                            {user?.email && <Link className='user-img-link' to="/home">
+                                <img className='user-img' src={user?.photoURL} alt="" />
+                            </Link>}
                         </Col>
                     </Row>
                 </Container>

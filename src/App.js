@@ -10,52 +10,55 @@ import About from './Pages/About/About';
 import Specialist from './Pages/Specialist/Specialist';
 import Contact from './Pages/Contact/Contact';
 import ServiceDetail from './Pages/Home/ServiceDetail/ServiceDetail';
+import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header></Header>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
 
-        <Switch>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
+          <Switch>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
 
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
 
-          <Route path="/servicedetail/:serviceID">
-            <ServiceDetail></ServiceDetail>
-          </Route>
+            <Route path="/servicedetail/:serviceID">
+              <ServiceDetail></ServiceDetail>
+            </Route>
 
-          <Route path="/about">
-            <About></About>
-          </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
 
-          <Route path="/specialist">
-            <Specialist></Specialist>
-          </Route>
+            <Route path="/specialist">
+              <Specialist></Specialist>
+            </Route>
 
-          <Route path="/contact">
-            <Contact></Contact>
-          </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
 
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/signup">
-            <Signup></Signup>
-          </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/signup">
+              <Signup></Signup>
+            </Route>
 
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
 
-        <Footer></Footer>
-      </BrowserRouter>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
