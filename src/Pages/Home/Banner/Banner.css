@@ -1,0 +1,101 @@
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    left: 10%;
+    padding: 30px;
+    color: #162F62;
+    text-align: left;
+    bottom: 0px;
+    width: 60%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-caption h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.carousel-caption .slide-btn{
+    background-color: #162F62;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 35px;
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.carousel-caption .slide-btn:hover{
+    border: 1px solid #FFFFFF;
+    color: #162F62;
+    background-color: transparent;
+}
+
+.carousel-indicators button {
+    background-color: #162F62 !important;
+}
+
+
+
+/********* BANNER RESPONSIVE ************/
+
+@media screen and (max-width:800px){
+    .carousel-caption h3 {
+        font-size: 20px;
+    }
+    
+    .carousel-caption p {
+        font-size: 15px;
+    }
+    
+    .carousel-caption .slide-btn {
+        margin-top: 5px;
+    }
+    
+    .carousel-caption {
+        height: 200px;
+        margin: auto;
+        left: 0;
+        top: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:562px){
+    .carousel-caption{
+        height: 250px;
+        padding: 15px;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+}
+
+@media screen and (max-width:475px){
+    .carousel-caption .slide-btn {
+        padding: 0px 23px;
+        margin-top: -5px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 15px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+
+    .carousel-caption {
+        height: auto;
+    }
+}
