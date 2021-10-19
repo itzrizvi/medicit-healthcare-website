@@ -7,10 +7,10 @@
                 react router and also many more components. I have completed this project in only 2 days.
                 The UI idea was taken from some themeforest template.</p>
 
-########SOME POINTS#########
+########SOME POINTS#########<br />
 *** This is a REACT JS Project <br />
-*** Fully Responsive for all devices
-*** React Bootstrap Used
-*** React Router Used
-*** Login and Signup Authentications with Firebase
+*** Fully Responsive for all devices<br />
+*** React Bootstrap Used<br />
+*** React Router Used<br />
+*** Login and Signup Authentications with Firebase<br />
 *** Signin and Login Authentication with Google, Github and Email, Password
