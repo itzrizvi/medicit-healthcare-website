@@ -26,7 +26,7 @@ const Header = () => {
             <div className="top-bar">
                 <Container>
                     <Row>
-                        <Col md={6} sm={6} xs={12}>
+                        <Col md={4} sm={4} xs={12}>
                             <ul className="social-icon d-flex">
                                 <li><Link to="/home">{fbIcon}</Link></li>
                                 <li><Link to="/home">{twitIcon}</Link></li>
@@ -34,15 +34,19 @@ const Header = () => {
                                 <li><Link to="/home">{instaIcon}</Link></li>
                             </ul>
                         </Col>
-                        <Col md={6} sm={6} xs={12} className='login-signup text-end'>
-                            <Link to="/signup" className='after-effect'>Sign up</Link>
-                            {user?.email ?
-                                <button onClick={logOut} className="logout-btn">Logout</button> :
-                                <Link to="/login">Login</Link>}
-                            <Link to="/home">{user?.displayName}</Link>
-                            {user?.photoURL && <Link className='user-img-link' to="/home">
-                                <img className='user-img' src={user?.photoURL} alt="" />
-                            </Link>}
+                        <Col md={8} sm={8} xs={12} className='login-signup text-end'>
+                            <div className="login-signup-links">
+                                <Link to="/signup" className='after-effect'>Sign up</Link>
+                                {user?.email ?
+                                    <button onClick={logOut} className="logout-btn">Logout</button> :
+                                    <Link to="/login">Login</Link>}
+                            </div>
+                            <div className="loged-in-data">
+                                <Link to="/home">{user?.displayName}</Link>
+                                {user?.photoURL && <Link className='user-img-link' to="/home">
+                                    <img className='user-img' src={user?.photoURL} alt="" />
+                                </Link>}
+                            </div>
                         </Col>
                     </Row>
                 </Container>

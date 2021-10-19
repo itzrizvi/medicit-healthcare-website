@@ -27,7 +27,9 @@ form.loginForm input {
     box-shadow: 5px 11px 14px -4px #7dd6f6;
 }
 
-.loginForm button, button.google-btn{
+.loginForm button, 
+button.google-btn,
+button.github-btn{
     text-decoration: none;
     background-color: #162F62;
     color: #FFFFFF;
@@ -41,7 +43,9 @@ form.loginForm input {
     margin-top: 8px;
 }
 
-.loginForm button:hover, button.google-btn:hover{
+.loginForm button:hover, 
+button.google-btn:hover,
+button.github-btn:hover{
     border: 1px solid #162F62;
     background-color: transparent;
     color: #162F62;
@@ -61,19 +65,32 @@ p.already-have-ac-txt a {
     padding-bottom: 2px;
 }
 
-button.google-btn {
-    display: block;
+button.google-btn, button.github-btn {
+    display: inline-block;
     margin: auto;
     margin-top: 20px;
 }
 
 
 /********** RESPONSIVE CSS ***********/
+
 @media screen and (max-width:767px){
     form.loginForm{
         width: 100%;
     }
     form.loginForm input{
         width: 85%;
+    }
+}
+
+@media screen and (max-width:429px){
+    button.google-btn{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    button.github-btn{
+        margin-left: 0px !important;
     }
 }

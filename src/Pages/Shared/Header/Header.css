@@ -4,7 +4,8 @@
 
 ul.social-icon{
     margin: 0;
-    padding: 0;
+    padding-top: 8px;
+    padding-left: 0px !important;
 }
 ul.social-icon li {
     list-style: none;
@@ -23,6 +24,15 @@ ul.social-icon li a {
 
 ul.social-icon li a:hover{
     color: #7DD6F6;
+}
+
+.login-signup{
+    display: flex;
+    justify-content: right;
+}
+
+.login-signup-links {
+    padding-top: 5px;
 }
 
 .login-signup a, button.logout-btn {
@@ -132,8 +142,14 @@ a.user-img-link {
     ul.social-icon {
         justify-content: center;
     }
-    .login-signup {
-        justify-content: center;
-        display: flex;
+    .login-signup{
+        display: block;
+    }
+    .login-signup-links {
+        text-align: center;
+    }
+    
+    .loged-in-data {
+        text-align: center;
     }
 }

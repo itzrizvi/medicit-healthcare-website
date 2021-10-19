@@ -2,6 +2,7 @@ import {
     getAuth,
     signInWithPopup,
     GoogleAuthProvider,
+    GithubAuthProvider,
     signOut,
     onAuthStateChanged,
     createUserWithEmailAndPassword,
@@ -14,6 +15,7 @@ import initializeAuthApp from "../Firebase/firebase.init";
 initializeAuthApp();
 const auth = getAuth();
 const googleProvider = new GoogleAuthProvider();
+const githubProvider = new GithubAuthProvider();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
@@ -41,13 +43,13 @@ const useFirebase = () => {
         return signInWithPopup(auth, googleProvider);
     }
 
+    const signInByGithub = () => {
+        return signInWithPopup(auth, githubProvider)
+    }
 
-    const signInWithEmail = (e) => {
-        e.preventDefault();
-        signInWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                setUser(result.user);
-            }).catch((err) => setError(err.message));
+    const signInWithEmail = () => {
+        return signInWithEmailAndPassword(auth, email, password)
+
     }
 
     const logOut = () => {
@@ -103,11 +105,13 @@ const useFirebase = () => {
 
     return {
         user,
+        setUser,
         isLoading,
         signInByGoogle,
         logOut,
         signUpByEmailPassWord,
         signInWithEmail,
+        signInByGithub,
         handleName,
         handleEmail,
         handlePassword,
