@@ -1,6 +1,6 @@
 <h1>Project Name: Medicit Health Care and Diagnostics</h1>
 
-<h3>Live Link: <a href="#">Click Here</a></h3>
+<h3>Live Link: <a href="https://medicit-health-care.web.app/">Click Here</a></h3>
 
 <p><strong>Summery:</strong> <br />
                 This is the fully responsive react project, with font-awesome, react bootstrap, 
