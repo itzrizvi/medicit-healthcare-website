@@ -1,11 +1,11 @@
 // Web App's Firebase configuration
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID
+    apiKey: "AIzaSyByKz_tPsWPfzHk_vIxJSIHz9vC0v_Fl6g",
+    authDomain: "medicit-health-care.firebaseapp.com",
+    projectId: "medicit-health-care",
+    storageBucket: "medicit-health-care.appspot.com",
+    messagingSenderId: "1091188732087",
+    appId: "1:1091188732087:web:aff5639be8dd1d98ef5d32"
 };
 
 export default firebaseConfig;

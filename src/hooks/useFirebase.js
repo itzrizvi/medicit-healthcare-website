@@ -1,19 +1,62 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
+import {
+    getAuth,
+    signInWithPopup,
+    GoogleAuthProvider,
+    signOut,
+    onAuthStateChanged,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    updateProfile
+} from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthApp from "../Firebase/firebase.init";
 
 initializeAuthApp();
+const auth = getAuth();
+const googleProvider = new GoogleAuthProvider();
+
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    const auth = getAuth();
+    const [error, setError] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [photo, setPhoto] = useState("");
+
+    const ClearError = () => {
+        setTimeout(() => {
+            setError("");
+        }, 5000);
+    };
+
+    // clear error
+    useEffect(() => {
+        ClearError();
+    }, [error]);
+
 
     const signInByGoogle = () => {
-        const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-            });
+        setIsLoading(true)
+        return signInWithPopup(auth, googleProvider);
     }
+
+
+    const signInWithEmail = (e) => {
+        e.preventDefault();
+        signInWithEmailAndPassword(auth, email, password)
+            .then((result) => {
+                setUser(result.user);
+            }).catch((err) => setError(err.message));
+    }
+
+    const logOut = () => {
+        setIsLoading(true);
+        signOut(auth)
+            .then(() => { })
+            .finally(() => setIsLoading(false));
+    }
+
 
     // Observer for User State Change
     useEffect(() => {
@@ -24,19 +67,52 @@ const useFirebase = () => {
             else {
                 setUser({})
             }
+            setIsLoading(false);
         });
         return () => unsubscribed;
-    }, [auth]);
+    }, []);
 
-    const logOut = () => {
-        signOut(auth)
-            .then(() => { });
+
+    const handleName = e => {
+        setName(e?.target?.value);
     }
+    const handleEmail = e => {
+        setEmail(e?.target?.value);
+    }
+    const handlePassword = e => {
+        setPassword(e?.target?.value);
+    }
+
+    const handlePhoto = e => {
+        setPhoto(e?.target?.value);
+    }
+
+    const signUpByEmailPassWord = () => {
+        return createUserWithEmailAndPassword(auth, email, password);
+
+    }
+
+    const setNameAndPhoto = () => {
+        updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: photo,
+        }).then((result) => { });
+    }
+
+
 
     return {
         user,
+        isLoading,
         signInByGoogle,
-        logOut
+        logOut,
+        signUpByEmailPassWord,
+        signInWithEmail,
+        handleName,
+        handleEmail,
+        handlePassword,
+        handlePhoto,
+        setNameAndPhoto
 
     }
 }

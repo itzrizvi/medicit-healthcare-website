@@ -40,7 +40,7 @@ const Header = () => {
                                 <button onClick={logOut} className="logout-btn">Logout</button> :
                                 <Link to="/login">Login</Link>}
                             <Link to="/home">{user?.displayName}</Link>
-                            {user?.email && <Link className='user-img-link' to="/home">
+                            {user?.photoURL && <Link className='user-img-link' to="/home">
                                 <img className='user-img' src={user?.photoURL} alt="" />
                             </Link>}
                         </Col>

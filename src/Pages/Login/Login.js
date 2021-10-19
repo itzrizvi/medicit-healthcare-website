@@ -5,10 +5,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import './Login.css';
 import useAuth from '../../hooks/useAuth';
+import { useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const Login = () => {
     const gIcon = <FontAwesomeIcon icon={faGoogle} />;
-    const { signInByGoogle } = useAuth();
+
+    const { signInWithEmail, signInByGoogle, handleEmail, handlePassword } = useAuth();
+
+    const location = useLocation();
+    const hostory = useHistory();
+    const redirectURL = location.state?.from || '/home';
+    const handleGoogleSignIn = () => {
+        signInByGoogle()
+            .then(result => {
+                hostory.push(redirectURL);
+            })
+    }
+
     return (
         <>
             <div className="login-form my-5 py-5">
@@ -22,13 +36,13 @@ const Login = () => {
                     </Row>
                     <Row>
                         <Col>
-                            <form className='loginForm mt-5 mb-3'>
-                                <input type="email" name="email" id="email" placeholder='Please enter your email...' />
-                                <input type="password" name="pass" id="pass" placeholder='Please enter your password...' />
+                            <form onSubmit={signInWithEmail} className='loginForm mt-5 mb-3'>
+                                <input type="email" onBlur={handleEmail} name="email" id="email" placeholder='Please enter your email...' />
+                                <input type="password" onBlur={handlePassword} name="pass" id="pass" placeholder='Please enter your password...' />
                                 <button type="submit">Login</button>
                                 <p className='already-have-ac-txt'>New Here? <Link to='/signup'>Sign up</Link> </p>
                             </form>
-                            <button onClick={signInByGoogle} className='google-btn'>{gIcon} Login with Google</button>
+                            <button onClick={handleGoogleSignIn} className='google-btn'>{gIcon} Login with Google</button>
                         </Col>
                     </Row>
                 </Container>
