@@ -4,7 +4,7 @@ import useAuth from '../../hooks/useAuth';
 import './Signup.css';
 
 const Signup = () => {
-
+    // Destructuring functions from useFirebase using useAuth
     const {
         handleName,
         handleEmail,
@@ -13,6 +13,7 @@ const Signup = () => {
         handlePhoto,
         setNameAndPhoto } = useAuth();
 
+    // Email and Password Registration Handler Function
     const handleRegistration = e => {
         e.preventDefault();
         signUpByEmailPassWord()
@@ -35,6 +36,7 @@ const Signup = () => {
                     </Row>
                     <Row>
                         <Col>
+                            {/* Registration Form Area */}
                             <form onSubmit={handleRegistration} className='signUpForm my-5'>
                                 <input type="text" onBlur={handleName} name="name" id="name" placeholder='Please enter your name...' required />
                                 <input type="email" onBlur={handleEmail} name="email" id="email" placeholder='Please enter your email...' required />

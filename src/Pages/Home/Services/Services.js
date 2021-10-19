@@ -4,6 +4,7 @@ import Service from '../Service/Service';
 import './Services.css';
 
 const Services = () => {
+    // Using useServices for Getting Data
     const { services } = useServices({});
 
     return (
@@ -15,6 +16,7 @@ const Services = () => {
                     </div>
                 </Row>
                 <Row>
+                    {/* Maping Data for getting each services */}
                     {
                         services.map(service => <Service
                             key={service.id}

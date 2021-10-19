@@ -1,3 +1,6 @@
+/******** CONTACT PAGE CSS ********/
+
+/*** Contact form area ***/
 .contact-form-section {
     background-color: #F2F7FA;
 }
@@ -13,14 +16,16 @@
     font-weight: 700;
 }
 
-.form-inner input, .form-inner textarea {
+.form-inner input, 
+.form-inner textarea {
     border: none;
     outline: none;
     color: #162f62;
     box-shadow: 5px 10px 13px -7px #7dd6f6;
 }
 
-.form-inner input:focus, .form-inner textarea:focus {
+.form-inner input:focus, 
+.form-inner textarea:focus {
     box-shadow: none;
 }
 

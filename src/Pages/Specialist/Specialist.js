@@ -12,6 +12,7 @@ import { faFacebook, faInstagram, faPinterest, faTwitter } from '@fortawesome/fr
 import './Specialist.css';
 
 const Specialist = () => {
+    // Font Awesome Icons
     const fbIcon = <FontAwesomeIcon icon={faFacebook} />
     const twitIcon = <FontAwesomeIcon icon={faTwitter} />
     const pintrstIcon = <FontAwesomeIcon icon={faPinterest} />
@@ -29,6 +30,8 @@ const Specialist = () => {
                     </Row>
                 </Container>
             </div>
+
+            {/* Team Area Starts */}
             <div className="team-section py-5">
                 <Container>
                     <Row>

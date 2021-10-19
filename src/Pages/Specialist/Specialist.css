@@ -1,8 +1,11 @@
+/********* SPECIALIST DOCTOR PAGE CSS ***********/
+
 ul, li{
     margin: 0;
     padding: 0;
 }
 
+/******** TEAM MEMBER AREA CSS *********/
 .team-inner {
     padding: 20px;
     box-shadow: 5px 10px 13px -7px #7dd6f6;

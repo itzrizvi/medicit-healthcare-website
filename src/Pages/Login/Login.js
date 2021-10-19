@@ -9,41 +9,53 @@ import { useLocation } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 
 const Login = () => {
+    // FontAwesome ICONS
     const gIcon = <FontAwesomeIcon icon={faGoogle} />;
     const githubIcon = <FontAwesomeIcon icon={faGithub} />;
 
+    // Destructuring exported function from useAuth
     const {
         signInWithEmail,
         signInByGoogle,
         signInByGithub,
         handleEmail,
         handlePassword,
-        setUser } = useAuth();
+        setUser,
+        setError,
+        error } = useAuth();
 
+    // Getting Location for Redirection
     const location = useLocation();
-    const hostory = useHistory();
+    // Use history for getting url to push location
+    const history = useHistory();
+    // redirectional url creation
     const redirectURL = location.state?.from || '/home';
+
+    // Google Sign In
     const handleGoogleSignIn = () => {
         signInByGoogle()
             .then(result => {
-                hostory.push(redirectURL);
+                history.push(redirectURL);
             })
     }
-
+    // Email Password Sign In
     const handleEmailPassSignIn = (e) => {
         e.preventDefault();
         signInWithEmail()
             .then((result) => {
                 setUser(result.user);
-                hostory.push(redirectURL);
+                history.push(redirectURL);
+            })
+            .catch(error => {
+                setError(error.message);
             })
     }
-
+    // Github Sign In
     const handleGithubSignIn = () => {
         signInByGithub()
             .then((result) => {
                 setUser(result.user);
-                hostory.push(redirectURL);
+                history.push(redirectURL);
             })
     }
 
@@ -60,10 +72,15 @@ const Login = () => {
                     </Row>
                     <Row>
                         <Col>
+                            {/* Login Form Area */}
                             <form onSubmit={handleEmailPassSignIn} className='loginForm mt-5 mb-3'>
+                                {error && <p className="text-danger">{error}</p>}
                                 <input type="email" onBlur={handleEmail} name="email" id="email" placeholder='Please enter your email...' />
                                 <input type="password" onBlur={handlePassword} name="pass" id="pass" placeholder='Please enter your password...' />
+
                                 <button type="submit">Login</button>
+
+
                                 <p className='already-have-ac-txt'>New Here? <Link to='/signup'>Sign up</Link> </p>
                             </form>
                             <button onClick={handleGoogleSignIn} className='google-btn'>{gIcon} Login with Google</button>

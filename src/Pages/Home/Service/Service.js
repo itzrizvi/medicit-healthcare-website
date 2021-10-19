@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = (props) => {
+    // Desctructuring the props
     const { name, price, report, img, id } = props.service;
     return (
+        // Service Showcase Area
         <Col md={4} sm={6} xs={12} className='text-start mb-5'>
             <div className="service-card">
                 <div className="service-img">

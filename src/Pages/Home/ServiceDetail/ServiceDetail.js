@@ -5,12 +5,16 @@ import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 
 const ServiceDetail = () => {
+    // Using useParams Hook for dynamic ID
     const { serviceID } = useParams();
+    // Using Use services custom hook for getting data
     const { services } = useServices({});
 
+    // Finding the selected service for showing details
     const matchedTest = services.find(service => service.id === parseInt(serviceID));
 
     return (
+        // Service Details Area
         <Container className='my-5'>
             <Row>
                 <Row>

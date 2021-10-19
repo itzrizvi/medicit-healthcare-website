@@ -9,13 +9,16 @@ import useAuth from '../../../hooks/useAuth';
 
 
 const Header = () => {
+    // Font Awesome Icons
     const fbIcon = <FontAwesomeIcon icon={faFacebook} />
     const twitIcon = <FontAwesomeIcon icon={faTwitter} />
     const pintrstIcon = <FontAwesomeIcon icon={faPinterest} />
     const instaIcon = <FontAwesomeIcon icon={faInstagram} />
 
+    // useAuth for user and Logout function
     const { user, logOut } = useAuth();
 
+    // Active Style for Menu
     const activeLink = {
         borderBottom: '1px solid #162F62',
         color: "#7DD6F6"
@@ -23,6 +26,7 @@ const Header = () => {
 
     return (
         <div>
+            {/* Top Bar Area */}
             <div className="top-bar">
                 <Container>
                     <Row>
@@ -51,6 +55,7 @@ const Header = () => {
                     </Row>
                 </Container>
             </div>
+            {/* Header and Nabvar Area */}
             <header className='head'>
                 <Container>
                     <Row>

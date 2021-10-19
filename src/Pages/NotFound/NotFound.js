@@ -1,11 +1,11 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import notFoundImg from '../../Images/notFoundpage.jpg';
-import './NotFound.css';
 
 const NotFound = () => {
     return (
         <>
+            {/* Not Found Area */}
             <div className="common-banner">
                 <Container>
                     <Row>
@@ -21,6 +21,7 @@ const NotFound = () => {
                 <Container>
                     <Row>
                         <Col md={12} sm={12} xs={12}>
+                            {/* Not Found Image */}
                             <img src={notFoundImg} className="img-fluid" alt="NOTFOUNDIMG" />
                         </Col>
                     </Row>

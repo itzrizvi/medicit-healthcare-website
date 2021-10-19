@@ -1,3 +1,4 @@
+/******** ABOUT CSS *******/
 .common-banner{
     background-image: url('../../Images/banner/banner-bg.jpg');
     background-position: center;
@@ -6,6 +7,7 @@
     padding: 70px 0px;
 }
 
+/****** MAIN FEATURES AREA *******/
 .main-features {
     background-color: #F1F9F4;
     padding: 20px;
@@ -73,7 +75,7 @@
     z-index: -1;
 }
 
-
+/**** WHY PEOPLE CHOOSE AREA *****/
 .why-people-choose-us-setion {
     background-color: #F1F9F4;
     padding: 70px 0px;
@@ -135,6 +137,8 @@ why-choose-list-title {
     color: #FF9F14;
 }
 
+
+/******** ACHIEVMENT AREA *********/
 .acheivements-section {
     padding: 40px 0px;
     background-color: aliceblue;

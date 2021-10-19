@@ -1,3 +1,6 @@
+/******FOOTER CSS*****/
+
+/***FOOTER AREA CSS ***/
 footer ul, footer ul li{
     margin: 0;
     padding: 0;
@@ -40,7 +43,7 @@ footer.foot{
 }
 
 
-/********* FOOTER RESPOMSIVE ************/
+/********* FOOTER RESPONSIVE CSS ************/
 @media screen and (max-width:767px){
     .foot-title {
         text-align: center;

@@ -16,6 +16,7 @@ import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 function App() {
   return (
     <div className="App">
+      {/* Routing With Auth Provider */}
       <AuthProvider>
         <BrowserRouter>
           <Header></Header>
@@ -29,6 +30,7 @@ function App() {
               <Home></Home>
             </Route>
 
+            {/* Private Rout */}
             <PrivateRoute path="/servicedetail/:serviceID">
               <ServiceDetail></ServiceDetail>
             </PrivateRoute>
@@ -37,6 +39,7 @@ function App() {
               <About></About>
             </Route>
 
+            {/* Private Rout */}
             <PrivateRoute path="/specialist">
               <Specialist></Specialist>
             </PrivateRoute>

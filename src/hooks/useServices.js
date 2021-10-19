@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 
+// Creating useServices function for using in different places
 const useServices = () => {
+    //Calling State for fetching services data
     const [services, setServices] = useState([]);
 
     useEffect(() => {
@@ -9,6 +11,7 @@ const useServices = () => {
             .then(data => setServices(data));
     }, []);
 
+    // Return Services for destructuring to other components
     return { services, setServices };
 }
 

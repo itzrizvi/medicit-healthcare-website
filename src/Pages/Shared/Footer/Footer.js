@@ -6,11 +6,13 @@ import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-ic
 import './Footer.css';
 
 const Footer = () => {
+    // Font Awesome Icons
     const addIcon = <FontAwesomeIcon icon={faMapMarker} />
     const envIcon = <FontAwesomeIcon icon={faEnvelope} />
     const phnIcon = <FontAwesomeIcon icon={faPhone} />
     return (
         <>
+            {/* Footer Area Starts */}
             <footer className='foot'>
                 <Container>
                     <Row>

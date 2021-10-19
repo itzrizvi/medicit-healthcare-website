@@ -6,6 +6,7 @@ import whyPeopleImg from '../../Images/about/whychooseus.jpg';
 import './About.css';
 
 const About = () => {
+    // Font Awesome Icons
     const medicalICon = <FontAwesomeIcon icon={faBookMedical} />
     const diagnosICon = <FontAwesomeIcon icon={faDiagnoses} />
     const labICon = <FontAwesomeIcon icon={faVials} />
@@ -13,6 +14,7 @@ const About = () => {
     const checkICon = <FontAwesomeIcon icon={faCheckSquare} />
     return (
         <>
+            {/* Common Banner */}
             <div className="common-banner">
                 <Container>
                     <Row>
@@ -73,6 +75,7 @@ const About = () => {
                 </Row>
             </Container>
 
+            {/* Why People Choose Us  Area*/}
             <div className="why-people-choose-us-setion">
                 <Container>
                     <Row>
@@ -132,6 +135,8 @@ const About = () => {
                     </Row>
                 </Container>
             </div>
+
+            {/* Acheivment Section */}
             <div className="acheivements-section">
                 <Container>
                     <Row>

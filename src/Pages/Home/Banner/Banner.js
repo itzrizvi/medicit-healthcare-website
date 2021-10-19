@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
         <>
+            {/* Carousel Area */}
             <Carousel>
                 <Carousel.Item>
                     <img
