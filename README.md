@@ -8,7 +8,7 @@
                 The UI idea was taken from some themeforest template.</p>
 
 ########SOME POINTS#########
-*** This is a REACT JS Project
+*** This is a REACT JS Project <br />
 *** Fully Responsive for all devices
 *** React Bootstrap Used
 *** React Router Used
