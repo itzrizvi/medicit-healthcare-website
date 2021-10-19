@@ -7,7 +7,7 @@
                 react router and also many more components. I have completed this project in only 2 days.
                 The UI idea was taken from some themeforest template.</p>
 
-########SOME POINTS#########<br />
+########<strong>SOME POINTS</strong>#########<br />
 *** This is a REACT JS Project <br />
 *** Fully Responsive for all devices<br />
 *** React Bootstrap Used<br />
