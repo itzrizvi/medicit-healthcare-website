@@ -1,0 +1,51 @@
+.contact-form-section {
+    background-color: #F2F7FA;
+}
+
+.form-inner {
+    width: 60%;
+    margin: auto;
+}
+
+.form-inner .form-label {
+    color: #162f62;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.form-inner input, .form-inner textarea {
+    border: none;
+    outline: none;
+    color: #162f62;
+    box-shadow: 5px 10px 13px -7px #7dd6f6;
+}
+
+.form-inner input:focus, .form-inner textarea:focus {
+    box-shadow: none;
+}
+
+.form-inner button {
+    background-color: #162f62;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    padding: 6px 29px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.form-inner button:hover {
+    background-color: transparent;
+    color: #162f62;
+    border: 1px solid #162f62;
+}
+
+
+/********** RESPONSIVE CSS *************/
+@media screen and (max-width:575px){
+    .form-inner{
+        width: 90%;
+    }
+}
