@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookMedical, faDiagnoses, faVials, faUserMd } from '@fortawesome/free-solid-svg-icons';
+import { faBookMedical, faDiagnoses, faVials, faUserMd, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import whyPeopleImg from '../../Images/about/whychooseus.jpg';
 import './About.css';
 
@@ -10,6 +10,7 @@ const About = () => {
     const diagnosICon = <FontAwesomeIcon icon={faDiagnoses} />
     const labICon = <FontAwesomeIcon icon={faVials} />
     const doctorICon = <FontAwesomeIcon icon={faUserMd} />
+    const checkICon = <FontAwesomeIcon icon={faCheckSquare} />
     return (
         <>
             <div className="common-banner">
@@ -23,7 +24,7 @@ const About = () => {
                     </Row>
                 </Container>
             </div>
-            <Container className='my-5'>
+            <Container className='my-5 pt-5'>
                 <Row>
                     <Col lg={3} md={4} sm={6} xs={12}>
                         <div className="main-features">
@@ -89,9 +90,74 @@ const About = () => {
                                     </p>
                                 </div>
                             </div>
-                            <Col md={12} sm={12} xs={12}>
-
-                            </Col>
+                            <Container fluid>
+                                <Row>
+                                    <Col lg={6} md={12} sm={12} xs={12}>
+                                        <div className="why-choose-list d-flex">
+                                            <div className="why-choose-icon-1">{checkICon}</div>
+                                            <div className="why-choose-list-title">
+                                                <h2>Always online services</h2>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col lg={6} md={12} sm={12} xs={12}>
+                                        <div className="why-choose-list d-flex">
+                                            <div className="why-choose-icon-2">{checkICon}</div>
+                                            <div className="why-choose-list-title">
+                                                <h2>Instant Operation</h2>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col lg={6} md={12} sm={12} xs={12}>
+                                        <div className="why-choose-list d-flex">
+                                            <div className="why-choose-icon-3">{checkICon}</div>
+                                            <div className="why-choose-list-title">
+                                                <h2>24/ 7 Advanced care</h2>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col lg={6} md={12} sm={12} xs={12}>
+                                        <div className="why-choose-list d-flex">
+                                            <div className="why-choose-icon-4">{checkICon}</div>
+                                            <div className="why-choose-list-title">
+                                                <h2>Make Appointment</h2>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </Container>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            <div className="acheivements-section">
+                <Container>
+                    <Row>
+                        <Col md={3} sm={6} xs={12}>
+                            <div className="achievment-inner">
+                                <h2 className='achievment-one'>149+</h2>
+                                <p>World Awards</p>
+                            </div>
+                        </Col>
+                        <Col md={3} sm={6} xs={12}>
+                            <div className="achievment-inner">
+                                <h2 className='achievment-two'>2M+</h2>
+                                <p>Happy Patients</p>
+                            </div>
+                        </Col>
+                        <Col md={3} sm={6} xs={12}>
+                            <div className="achievment-inner">
+                                <h2 className='achievment-three'>449+</h2>
+                                <p>Expert Doctors</p>
+                            </div>
+                        </Col>
+                        <Col md={3} sm={6} xs={12}>
+                            <div className="achievment-inner">
+                                <h2 className='achievment-four'>10K+</h2>
+                                <p>Done Operation</p>
+                            </div>
                         </Col>
                     </Row>
                 </Container>

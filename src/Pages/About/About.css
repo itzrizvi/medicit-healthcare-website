@@ -72,3 +72,131 @@
     margin: auto;
     z-index: -1;
 }
+
+
+.why-people-choose-us-setion {
+    background-color: #F1F9F4;
+    padding: 70px 0px;
+    margin-bottom: 50px;
+}
+
+.why-people-choose-img img {
+    width: 90%;
+    margin: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 8px 11px 13px -7px #7dd6f6;
+}
+
+.why-people-detail h2 {
+    color: #162f62;
+    font-size: 29px;
+    font-weight: 700;
+    padding-bottom: 14px;
+}
+
+.why-people-detail p {
+    color: #162f62;
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 22px;
+}
+
+why-choose-list-title {
+    font-size: 18px;
+}
+
+.why-choose-list-title h2 {
+    font-size: 19px;
+    color: #162f62;
+    line-height: 42px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.why-choose-icon-1,
+.why-choose-icon-2,
+.why-choose-icon-3,
+.why-choose-icon-4 {
+    font-size: 30px;
+}
+
+.why-choose-icon-1{
+    color: #797EF6;
+}
+.why-choose-icon-2{
+    color: #FC7575;
+}
+.why-choose-icon-3{
+    color: #7DD6F6;
+}
+.why-choose-icon-4{
+    color: #FF9F14;
+}
+
+.acheivements-section {
+    padding: 40px 0px;
+    background-color: aliceblue;
+}
+
+.achievment-inner {
+    line-height: 28px;
+}
+
+h2.achievment-one, 
+h2.achievment-two, 
+h2.achievment-three, 
+h2.achievment-four {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+h2.achievment-one{
+    color:#797EF6;
+}
+h2.achievment-two{
+    color: #FC7575;
+}
+h2.achievment-three{
+    color: #7DD6F6;
+}
+h2.achievment-four{
+    color: #FF9F14;
+}
+
+.achievment-inner p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #162f62;
+}
+
+
+/********* RESPONSIVE CSS **********/
+@media screen and (max-width:1057px){
+    .why-choose-list-title h2{
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .why-people-detail h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .why-people-choose-img img {
+        width: 100%;
+    }
+
+    .achievment-inner{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:575px){
+    .why-people-choose-img {
+        margin-bottom: 45px;
+    }
+}

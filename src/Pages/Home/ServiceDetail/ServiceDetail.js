@@ -8,7 +8,7 @@ const ServiceDetail = () => {
     const { serviceID } = useParams();
     const { services } = useServices({});
 
-    const matchedCourse = services.find(service => service.id === parseInt(serviceID));
+    const matchedTest = services.find(service => service.id === parseInt(serviceID));
 
     return (
         <Container className='my-5'>
@@ -22,15 +22,15 @@ const ServiceDetail = () => {
                 </Row>
                 <Col md={6} sm={6} xs={12}>
                     <div className="single-service-img">
-                        <img src={matchedCourse?.img} alt="SingleServiceIMG" className='img-fluid' />
+                        <img src={matchedTest?.img} alt="SingleServiceIMG" className='img-fluid' />
                     </div>
                 </Col>
                 <Col md={6} sm={6} xs={12}>
                     <div className="single-service-detail text-start">
-                        <h3>{matchedCourse?.name}</h3>
-                        <p>Details: <br /><span>{matchedCourse?.desc}</span></p>
-                        <h5>Report: <span>{matchedCourse?.report}</span></h5>
-                        <h4>Price: <span>${matchedCourse?.price}</span></h4>
+                        <h3>{matchedTest?.name}</h3>
+                        <p>Details: <br /><span>{matchedTest?.desc}</span></p>
+                        <h5>Report: <span>{matchedTest?.report}</span></h5>
+                        <h4>Price: <span>${matchedTest?.price}</span></h4>
                         <Link to='/contact'>Contact us</Link>
                     </div>
                 </Col>
