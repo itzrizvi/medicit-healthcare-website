@@ -9,7 +9,7 @@ const Services = () => {
 
     return (
         <>
-            <Container className='my-5 py-5'>
+            <Container className='mt-5 mb-1 py-5'>
                 <Row>
                     <div className="service-title mb-5">
                         <h2>Our Services</h2>

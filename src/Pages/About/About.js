@@ -28,6 +28,11 @@ const About = () => {
             </div>
             <Container className='my-5 pt-5'>
                 <Row>
+                    <div className="service-title mb-5">
+                        <h2>Our Specialities</h2>
+                    </div>
+                </Row>
+                <Row>
                     <Col lg={3} md={4} sm={6} xs={12}>
                         <div className="main-features">
                             <div className="feature-icon-1">
