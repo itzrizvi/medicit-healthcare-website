@@ -7,6 +7,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const SurpriseBody = () => {
     return (
         <>
+            {/* Surprise Body Section Area */}
             <div className="surprise-body-section">
                 <Container>
                     <Row>

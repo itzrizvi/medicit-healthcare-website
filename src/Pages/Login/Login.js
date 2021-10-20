@@ -79,7 +79,7 @@ const Login = () => {
                     <Row>
                         <Col>
                             {/* Login Form Area */}
-                            <form onSubmit={handleEmailPassSignIn} className='loginForm mt-5 mb-3'>
+                            <form onSubmit={handleEmailPassSignIn} className='loginForm mt-3 mb-3'>
                                 {error && <p className="text-danger"> Email or Password Didn't Matched Try Again<br />{error}</p>}
                                 <input type="email" onBlur={handleEmail} name="email" id="email" placeholder='Please enter your email...' />
                                 <input type="password" onBlur={handlePassword} name="pass" id="pass" placeholder='Please enter your password...' />
