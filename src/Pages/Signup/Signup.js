@@ -20,7 +20,6 @@ const Signup = () => {
             .then((result) => {
                 setNameAndPhoto();
                 window.location.reload();
-                console.log(result.user);
             })
     }
     return (

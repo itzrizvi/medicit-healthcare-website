@@ -37,6 +37,9 @@ const Login = () => {
             .then(result => {
                 history.push(redirectURL);
             })
+            .catch(error => {
+                setError(error.message);
+            })
     }
     // Email Password Sign In
     const handleEmailPassSignIn = (e) => {
@@ -57,6 +60,9 @@ const Login = () => {
                 setUser(result.user);
                 history.push(redirectURL);
             })
+            .catch(error => {
+                setError(error.message);
+            })
     }
 
     return (
@@ -74,7 +80,7 @@ const Login = () => {
                         <Col>
                             {/* Login Form Area */}
                             <form onSubmit={handleEmailPassSignIn} className='loginForm mt-5 mb-3'>
-                                {error && <p className="text-danger">{error}</p>}
+                                {error && <p className="text-danger"> Email or Password Didn't Matched Try Again<br />{error}</p>}
                                 <input type="email" onBlur={handleEmail} name="email" id="email" placeholder='Please enter your email...' />
                                 <input type="password" onBlur={handlePassword} name="pass" id="pass" placeholder='Please enter your password...' />
 
