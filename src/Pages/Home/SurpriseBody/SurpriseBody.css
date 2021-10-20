@@ -1,0 +1,83 @@
+/******** SURPRISE BODY CSS *******/
+
+/***Background Image set **/
+.surprise-body-section{
+    background-image: url('../../../Images/surpiseBodybg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 90px 0px;
+}
+
+.surpise-body-img img {
+    width: 80%;
+    margin: auto;
+}
+
+.surprise-body-details {
+    padding: 15px;
+}
+
+.surprise-heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    color: #162F62;
+    margin-bottom: 23px;
+}
+
+.surprise-heading p {
+    color: #162F62;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 33px;
+    margin-bottom: 29px;
+}
+
+/** Rating Area **/
+.rating-area {
+    position: relative;
+    z-index: 1;
+}
+
+.rating-area img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: auto;
+}
+
+.rating-text {
+    padding: 15px;
+}
+
+.rating-text h2 {
+    font-size: 47px;
+    font-weight: 700;
+    color: #FC7575;
+}
+
+.rating-text p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #162F62;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+
+
+/********** RESPONSIVE CSS *************/
+@media screen and (max-width:767px){
+    .surprise-body-details{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:575px){
+    .surpise-body-img img{
+        margin-bottom: 40px;
+    }
+}
